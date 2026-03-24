@@ -1,20 +1,23 @@
-/// python translations ///
+/// showcase ///
 
-// functions //
-fn area(r) => {
-    let pi = 3.14
+// functions
+fn area(r) {
+    pi = 3.14
     pi * r * r
 }
  
 
-// quick loops //
+// quick loops
 repeat 5{
     print("Hello")
 }
 
-// variables and reasignment //
-let x = 5
-re let x = 10
+// variables and reasignment
+x = 5
+x = 10
 
-~ "let" asigns X with the number "5" like putting it into a box for later use ~
-~ "re let" reasigns the variable to "10" ~
+~ the first time X is mentioned asigns X with the number "5" like putting it into a box for later use ~
+~ the second time X is mentioned it is reasignmed the number "10" (note: this value ) ~
+
+// printing variable
+print(x)

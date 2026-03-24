@@ -23,3 +23,9 @@ fn area(r) {
     const pi = 3.14
     pi * r * r
 }
+
+// script reference
+bring math ~ logic built into idot ~
+bring "utils.idot" as tools ~ referencing other .idot scripts~
+bring(py) "legacy_code.py" as python_stuff ~ referencing python scripts ~
+bring(js) "legacy_code.js" as js_stuff ~ referencing javascript scripts ~

@@ -35,3 +35,13 @@ Referencing external scripts
 bring(py) "example.py" as py_example
 bring(js) "example.js" as js_example
 ```
+
+# Getting input
+Collecting te users input is as simple as
+```
+input_get()
+```
+then save it as a variable 
+```
+let x = input_get()
+```

@@ -1,0 +1,25 @@
+/// python translations ///
+
+// maths //
+let radius = 10
+/ this would translate to "radius = 10" in python /
+
+// functions //
+fn area(r) => {
+    let pi = 3.14
+    pi * r * r
+}
+/# this would translate to:
+def area(r):
+    pi = 3.14
+    return pi * r * r
+#/
+
+// quick loops //
+repeat 5{
+    print("Hello")
+}
+/# this would translate to:
+for _ in range(5):
+    print("Hello")
+#/

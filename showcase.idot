@@ -1,23 +1,25 @@
 /// showcase ///
 
-// functions
-fn area(r) {
-    pi = 3.14
-    pi * r * r
-}
- 
+// printing
+print("Hello World!")
+
+// variables and reasignment
+let x = 5
+x = 10
+const y = 15
+
+~ see tut about variable ~
+
+// print variable
+print(x)
 
 // quick loops
-repeat 5{
+repeat 5 {
     print("Hello")
 }
 
-// variables and reasignment
-x = 5
-x = 10
-
-~ the first time X is mentioned asigns X with the number "5" like putting it into a box for later use ~
-~ the second time X is mentioned it is reasignmed the number "10" (note: this value ) ~
-
-// printing variable
-print(x)
+// functions
+fn area(r) {
+    const pi = 3.14
+    pi * r * r
+}

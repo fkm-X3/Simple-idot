@@ -23,6 +23,16 @@ A variable without a "let" is a reassignment of the value
 
 "const" makes values unable to be changed or reasigned
 
+## Printing variables
+when printing out variables there are 2 things to understand
+```
+x = "hello world"
+
+print(x)
+print("the variable x is", {x})
+```
+you can print a variable directly with the print command (print(x)), or you can print out some text first then the variable (print("test text", {x}))
+
 ## Script reference
 Simple-idot can reference other simple-idot scripts or other scripts
 

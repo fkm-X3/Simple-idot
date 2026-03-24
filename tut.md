@@ -2,14 +2,14 @@
 
 ## Comments
 ```
-/// Importent header comment///
+/// Importent header comment ///
 
-// Block lable comment //
+// Single line comments
 
-~ single line comment ~
-
-/#
+/*
 Multi line comment
-#/
+*/
+
+~ documentation comments ~
 ```
 

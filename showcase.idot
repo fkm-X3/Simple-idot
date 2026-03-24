@@ -1,25 +1,20 @@
 /// python translations ///
 
-// maths //
-let radius = 10
-~ this would translate to "radius = 10" in python ~
-
 // functions //
 fn area(r) => {
     let pi = 3.14
     pi * r * r
 }
-/# this would translate to:
-def area(r):
-    pi = 3.14
-    return pi * r * r
-#/
+ 
 
 // quick loops //
 repeat 5{
     print("Hello")
 }
-/# this would translate to:
-for _ in range(5):
-    print("Hello")
-#/
+
+// variables and reasignment //
+let x = 5
+re let x = 10
+
+~ "let" asigns X with the number "5" like putting it into a box for later use ~
+~ "re let" reasigns the variable to "10" ~

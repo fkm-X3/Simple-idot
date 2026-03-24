@@ -1,15 +1,16 @@
 # Simple-idot
-just haxe but with a much simplier for beginners to understand
+a simple compiled language
 
 
 ## Example syntax
 ```
-input: repeat 5 { print "hi" }
+repeat 5 { print "hi" }
 ```
-can be compiled into different languages like python
-
-python output: 
+this would output:
 ```
-for i in range(5):
-    print("hi")
+hi
+hi
+hi
+hi
+hi
 ```

@@ -2,7 +2,7 @@
 
 // maths //
 let radius = 10
-/ this would translate to "radius = 10" in python /
+~ this would translate to "radius = 10" in python ~
 
 // functions //
 fn area(r) => {

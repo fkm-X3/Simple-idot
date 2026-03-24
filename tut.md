@@ -6,6 +6,8 @@
 
 // Block lable comment //
 
+~ single line comment ~
+
 /#
 Multi line comment
 #/

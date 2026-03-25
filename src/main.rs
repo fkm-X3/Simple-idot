@@ -11,7 +11,7 @@ fn main() {
     
     println!("--- simple-idot v{} ---", settings.version);
 
-    let input = fs::read_to_string("../showcase.idot")
+    let input = fs::read_to_string("showcase.idot")
         .expect("Could not read the file");
 
     let mut lexer = Lexer::new(&input);

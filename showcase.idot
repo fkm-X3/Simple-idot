@@ -26,7 +26,7 @@ fn area(r) {
 }
 
 // script reference
-bring math ~ logic built into idot ~
+bring math ~ logic built into idot (logic doesn't exist yet :3) ~
 bring "utils.idot" as tools ~ referencing other .idot scripts~
 
 ~ you can pick to reference 1 function from the script with the following command ~

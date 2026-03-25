@@ -33,12 +33,33 @@ print("the variable x is", {x})
 ```
 you can print a variable directly with the print command (print(x)), or you can print out some text first then the variable (print("test text", {x}))
 
+## Loops
+loops are very simple so i won't waste your time
+```
+repeat 5{
+    print("hello")
+}
+```
+the "repeat" part makes the code repeat the ammount of times the number indicates (eg: "repeat 5", would repeat the code 5 times)
+
+# Functions
+functions are very simple to grasp for a beginner
+```
+fn example_fucntion(EF) {
+    const x = 10
+    x + ef * x
+}
+```
+functions act like def from python, they can be referenced in other parts of code or through script referencing
+
 ## Script reference
 Simple-idot can reference other simple-idot scripts or other scripts
 
 Referencing other .idot scripts
 ```
 bring "example.idot" as test
+bring "example.idot" as test
+from "example.idot" import example_function(EF)
 ```
 Referencing external scripts
 ```

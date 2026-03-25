@@ -12,6 +12,7 @@ const y = 15
 
 // print variable
 print(x)
+print("hello", {x}) ~ the {x} part is explained in the tut ~
 
 // quick loops
 repeat 5 {
@@ -27,6 +28,11 @@ fn area(r) {
 // script reference
 bring math ~ logic built into idot ~
 bring "utils.idot" as tools ~ referencing other .idot scripts~
+
+~ you can pick to reference 1 function from the script with the following command ~
+bring {calculate} from "utils.idot" as calculate_area ~ referencing specific function from other .idot script ~
+
+// external script reference
 bring(py) "legacy_code.py" as python_stuff ~ referencing python scripts ~
 bring(js) "legacy_code.js" as js_stuff ~ referencing javascript scripts ~
 

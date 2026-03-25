@@ -45,9 +45,9 @@ the "repeat" part makes the code repeat the ammount of times the number indicate
 # Functions
 functions are very simple to grasp for a beginner
 ```
-fn example_fucntion(EF) {
+fn example_function(EF) {
     const x = 10
-    x + ef * x
+    x + EF * x
 }
 ```
 functions act like def from python, they can be referenced in other parts of code or through script referencing
@@ -59,7 +59,7 @@ Referencing other .idot scripts
 ```
 bring "example.idot" as test
 bring "example.idot" as test
-from "example.idot" import example_function(EF)
+bring {example_function} from "example.idot" as test_example_function
 ```
 Referencing external scripts
 ```

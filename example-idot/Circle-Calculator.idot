@@ -1,0 +1,12 @@
+/// Circle Calculator ///
+
+fn calculate_area(radius) {
+    const pi = 3.14159 [cite: 1]
+    pi * radius * radius [cite: 1]
+}
+
+print("Enter a radius:")
+let r = input_get() [cite: 1, 2]
+
+let area = calculate_area(r)
+print("The area is", {area}) [cite: 1, 2]

@@ -1,0 +1,10 @@
+/// Integration Script ///
+
+// Bringing in a local helper and an external python script
+bring "math_utils.idot" as local_math [cite: 1, 2]
+bring(py) "analytics.py" as py_stats [cite: 1, 2]
+
+let data = 100
+let processed = local_math.process(data)
+
+print("Result from local script:", {processed}) [cite: 1]

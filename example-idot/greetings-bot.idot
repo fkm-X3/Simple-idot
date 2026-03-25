@@ -1,0 +1,10 @@
+/// Greeting Bot ///
+
+print("How many times should I say hello?")
+let count = input_get() [cite: 2]
+
+repeat count { [cite: 1, 2]
+    print("Hello!")
+}
+
+print("Task complete.")

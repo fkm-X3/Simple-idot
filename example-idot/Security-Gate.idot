@@ -1,0 +1,14 @@
+/// Security Gate ///
+
+const secret_code = "1234"
+print("Enter the passcode:")
+let attempt = input_get()
+
+when (attempt == secret_code) {
+    print("Welcome home!")
+} otherwise {
+    print("Intruder alert!")
+    repeat 3 {
+        print("BEEP!")
+    }
+}

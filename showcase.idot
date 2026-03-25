@@ -22,7 +22,7 @@ repeat 5 {
 // functions
 fn area(r) {
     const pi = 3.14
-    pi * r * r
+    return pi * r * r
 }
 
 // maths operations

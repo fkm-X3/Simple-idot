@@ -1,16 +1,4 @@
 # Simple-idot
-a simple compiled language
+a simple compiled language for begineers
 
-
-## Example syntax
-```
-repeat 5 { print "hi" }
-```
-this would output:
-```
-hi
-hi
-hi
-hi
-hi
-```
+(on god twin 90% of this is just python syntax :sob:)

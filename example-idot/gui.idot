@@ -1,0 +1,50 @@
+/// gui ///
+// This file is for GUI related code, such as buttons, sliders, etc.
+let gui = gui.new() ~ creating a new GUI instance ~
+let button = gui.button("Click me!") ~ creating a button with the text "Click me!" ~
+let slider = gui.slider(0, 100) ~ creating a slider with a range from 0 to 100 ~
+let checkbox = gui.checkbox("Check me!") ~ creating a checkbox with the text "Check me!" ~
+let text_input = gui.text_input("Type here...") ~ creating a text input with the placeholder "Type here..." ~
+let dropdown = gui.dropdown(["Option 1", "Option 2", "Option 3"]) ~ creating a dropdown with 3 options ~
+let label = gui.label("This is a label") ~ creating a label with the text "This is a label" ~
+let progress_bar = gui.progress_bar(0) ~ creating a progress bar with an initial value of 0 ~
+let toggle = gui.toggle("Toggle me!") ~ creating a toggle switch with the text "Toggle me!" ~
+let color_picker = gui.color_picker() ~ creating a color picker ~
+let date_picker = gui.date_picker() ~ creating a date picker ~
+let time_picker = gui.time_picker() ~ creating a time picker ~
+let file_picker = gui.file_picker() ~ creating a file picker ~
+
+
+button.on_click(() fn() {
+    print("Button clicked!") ~ this function will be called when the button is clicked ~
+})
+slider.on_change(() fn(value) {
+    print("Slider value changed to", {value}) ~ this function will be called when the slider value changes ~
+})
+dropdown.on_change(() fn(value) {
+    print("Dropdown value changed to", {value}) ~ this function will be called when the dropdown value changes ~
+})
+text_input.on_change(() fn(value) {
+    print("Text input value changed to", {value}) ~ this function will be called when the text input value changes ~
+})
+label.on_change(() fn(value) {
+    print("Label value changed to", {value}) ~ this function will be called when the label value changes ~
+})
+progress_bar.on_change(() fn(value) {
+    print("Progress bar value changed to", {value}) ~ this function will be called when the progress bar value changes ~
+})
+toggle.on_change(() fn(value) {
+    print("Toggle value changed to", {value}) ~ this function will be called when the toggle value changes ~
+})
+color_picker.on_change(() fn(value) {
+    print("Color picker value changed to", {value}) ~ this function will be called when the color picker value changes ~
+})
+date_picker.on_change(() fn(value) {
+    print("Date picker value changed to", {value}) ~ this function will be called when the date picker value changes ~
+})
+time_picker.on_change(() fn(value) {
+    print("Time picker value changed to", {value}) ~ this function will be called when the time picker value changes ~
+})
+file_picker.on_change(() fn(value) {
+    print("File picker value changed to", {value}) ~ this function will be called when the file picker value changes ~
+})

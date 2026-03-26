@@ -106,3 +106,6 @@ when (age > 18) {
     print("Access denied")
 }
 ```
+
+# IMPORTENT: the following part of documentation about screen gui's isn't included in showacase.idot, it it included as an example under example-idot/gui.idot
+

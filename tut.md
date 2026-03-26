@@ -107,5 +107,4 @@ when (age > 18) {
 }
 ```
 
-# IMPORTENT: the following part of documentation about screen gui's isn't included in showacase.idot, it it included as an example under example-idot/gui.idot
-
+# IMPORTENT: Gui isn't in the tut or showcase due to how its pretty big

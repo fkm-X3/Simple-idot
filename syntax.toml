@@ -1,0 +1,18 @@
+# Simple-idot Syntax Configuration
+# This file defines keywords and built-in functions for the lexer
+
+[keywords]
+# Core language keywords
+items = ["let", "const", "fn", "repeat", "when", "otherwise", "bring", "as", "from", "return"]
+
+[builtins]
+# Built-in functions that should be recognized by the lexer
+functions = [
+    "print",
+    "input_get",
+    "string_to_number",
+    "array_new",
+]
+
+# Add new functions here as the language grows
+# Example: "input_get_int", "file_read", etc.

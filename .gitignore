@@ -1,5 +1,3 @@
 target/
 LEXER_UPDATE_TOOL.md
 QUICK_START.md
-syntax.toml
-update_lexer.rs

@@ -1,7 +1,10 @@
 #[derive(Debug, PartialEq, Clone)]
 pub enum Token {
     // Keywords
-    Let, Const, Fn, Repeat, When, Otherwise, Bring, As, From,
+    Let, Const, Fn, Repeat, When, Otherwise, Bring, As, From, Return,
+    
+    // Built-in Functions
+    Print, InputGet, StringToNumber, ArrayNew,
     
     // Literals
     Identifier(String),
@@ -97,6 +100,11 @@ impl Lexer {
             "bring" => Token::Bring,
             "as" => Token::As,
             "from" => Token::From,
+            "return" => Token::Return,
+            "print" => Token::Print,
+            "input_get" => Token::InputGet,
+            "string_to_number" => Token::StringToNumber,
+            "array_new" => Token::ArrayNew,
             _ => Token::Identifier(ident),
         }
     }
@@ -149,5 +157,31 @@ mod tests {
         assert_eq!(lexer.next_token(), Token::Identifier("x".to_string()));
         assert_eq!(lexer.next_token(), Token::Assign);
         assert_eq!(lexer.next_token(), Token::Number(5.0));
+    }
+    
+    #[test]
+    fn test_builtin_functions() {
+        let input = "print input_get string_to_number";
+        let mut lexer = Lexer::new(input);
+        
+        assert_eq!(lexer.next_token(), Token::Print);
+        assert_eq!(lexer.next_token(), Token::InputGet);
+        assert_eq!(lexer.next_token(), Token::StringToNumber);
+    }
+    
+    #[test]
+    fn test_return_keyword() {
+        let input = "fn add(x) { return x }";
+        let mut lexer = Lexer::new(input);
+        
+        assert_eq!(lexer.next_token(), Token::Fn);
+        assert_eq!(lexer.next_token(), Token::Identifier("add".to_string()));
+        assert_eq!(lexer.next_token(), Token::OpenParen);
+        assert_eq!(lexer.next_token(), Token::Identifier("x".to_string()));
+        assert_eq!(lexer.next_token(), Token::CloseParen);
+        assert_eq!(lexer.next_token(), Token::OpenBrace);
+        assert_eq!(lexer.next_token(), Token::Return);
+        assert_eq!(lexer.next_token(), Token::Identifier("x".to_string()));
+        assert_eq!(lexer.next_token(), Token::CloseBrace);
     }
 }

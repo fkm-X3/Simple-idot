@@ -2,5 +2,14 @@
 name = "lexer"
 version = "0.1.0"
 edition = "2024"
+default-run = "simple-idot"
+
+[[bin]]
+name = "simple-idot"
+path = "src/main.rs"
+
+[[bin]]
+name = "update_lexer"
+path = "update_lexer.rs"
 
 [dependencies]
